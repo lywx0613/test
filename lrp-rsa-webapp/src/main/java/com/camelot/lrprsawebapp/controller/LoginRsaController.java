@@ -18,7 +18,7 @@ public class LoginRsaController {
     public String getPasswprdKey(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse){
         try {
             System.out.println("测试");
-
+            System.out.println("测试");
             PrintWriter writer = httpServletResponse.getWriter();
             Map<Integer, String> map = RSAEncrypt.genKeyPair();
             IdWorker idWorker = new IdWorker();
