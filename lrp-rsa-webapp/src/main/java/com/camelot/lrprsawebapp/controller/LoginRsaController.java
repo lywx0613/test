@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -18,7 +20,7 @@ public class LoginRsaController {
     public String getPasswprdKey(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse){
         try {
             System.out.println("测试");
-
+            List<String> list = new ArrayList<>();
             PrintWriter writer = httpServletResponse.getWriter();
             Map<Integer, String> map = RSAEncrypt.genKeyPair();
             IdWorker idWorker = new IdWorker();
