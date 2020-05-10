@@ -21,6 +21,7 @@ public class LoginRsaController {
         try {
             System.out.println("测试");
             List<String> list = new ArrayList<>();
+            System.out.println("测试");
             PrintWriter writer = httpServletResponse.getWriter();
             Map<Integer, String> map = RSAEncrypt.genKeyPair();
             IdWorker idWorker = new IdWorker();
