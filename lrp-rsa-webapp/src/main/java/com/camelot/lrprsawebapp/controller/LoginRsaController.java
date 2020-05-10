@@ -28,6 +28,7 @@ public class LoginRsaController {
 //            consumerService.setRedis(String.valueOf(idWorker.nextId()),map.get(1), DBType.lockDB);
             writer.write(map.get(0));
             System.out.println("-----公钥----："+map.get(0));
+            System.out.println("测试1111111111");
             return null;
         } catch (Exception e) {
             return null;
